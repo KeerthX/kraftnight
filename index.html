@@ -9,7 +9,7 @@
     <title>Prescription.ai</title>
 </head>
 <body>
-    <section class="hero_section">
+    <section>
         <nav class="navbar">
             <div class="item_nav">How to Use</div>
             <div class="item_nav">About Us</div>
@@ -17,9 +17,21 @@
         </nav>
         <h1>Prescription.ai</h1>
         <span class="subtitle">Your Medicine Keeper</span>
-    </section>    
-    <section class="search_section">
-        
+    </section> 
+    <section>
+        <div class="container">
+            <div class="input">
+                <form>
+                    <label for="query">Ask me anything:</label>
+                    <input type="text" id="query" name="query">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            <div class="output">
+                <label for="answer">Answer:</label>
+                <textarea id="answer" name="answer" readonly></textarea>
+            </div>
+        </div>
     </section>
       
     <script src="sandbox.js"></script>
